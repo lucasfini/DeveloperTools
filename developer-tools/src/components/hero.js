@@ -46,8 +46,7 @@ const Hero = () => {
               src={require("../img/toolbox.png")}
               className="rounded hero-image"
               alt="hah"
-              width="550"
-              height="600"
+            
             ></img>
           </div>
         </div>

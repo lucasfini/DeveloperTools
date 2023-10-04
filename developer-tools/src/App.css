@@ -85,6 +85,10 @@ color: var(--10);
 
 .hero-section{
   background-color: var(--7);
+
+  min-height: auto;
+
+  
 }
 
 .hero-title{
@@ -102,6 +106,9 @@ color: var(--10);
  transform: rotate(3deg);
 border : solid 2px var(--10)  ;
  box-shadow: 0 20px 40px var(--6);
+ min-width: 200px;
+ max-width: 700px;
+
 }
 
 
@@ -134,7 +141,7 @@ border : solid 2px var(--10)  ;
 
 .about-section{
   background-color: var(--10);
-  padding-top: 10%;
+
 }
 
 .about-box{
@@ -146,7 +153,7 @@ border : solid 2px var(--10)  ;
   margin: 5px;
   height: 250px;
   width: 250px;
-  
+  margin-bottom: 5%;
   opacity: 90%;
 
 
@@ -212,6 +219,8 @@ border : solid 2px var(--10)  ;
     opacity: 30%;
     font-weight: bold;
     font-size: 15px;
+    margin-top: 5%;
+    
     font-family: 'poppins';
 }
 
@@ -224,6 +233,8 @@ border : solid 2px var(--10)  ;
   color: var(--5);
   font-family: 'poppins';
   font-size: medium;
+  font-weight: 300;
+  font-size: 15px;
 
 
 }
@@ -238,6 +249,7 @@ border : solid 2px var(--10)  ;
 
 .pricingblock-square{
   background-color: var(--10);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   height: auto;
   max-width: 450px;
   border-radius: 20px;
@@ -271,7 +283,7 @@ border : solid 2px var(--10)  ;
 
 .pricing-title{
   color: var(--8);
-  opacity: 30%;
+  opacity: 70%;
   font-weight: bold;
   font-size: 15px;
   font-family: 'poppins';
