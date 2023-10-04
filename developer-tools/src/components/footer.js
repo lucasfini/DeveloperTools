@@ -14,7 +14,7 @@ const Footer = () => {
     <div className="footer-section ">
       <div className="container">
         <div className="row p-5">
-          <div className="col-4">
+          <div className="col-12 d-flex justify-content-center justify-content-md-start flex-column align-items-center align-items-lg-start align-items-md-start col-sm-4 col-md-4 col-lg-4">
             <div className="row ">
               <div className="col-12">
                 <a>
@@ -44,7 +44,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col-8 d-flex ">
+          <div className="col-12 col-sm-8  d-flex ">
             <div className="col-6 d-flex align-items-center  flex-column">
               <div className="row">
                 <div className="col-12 ">
