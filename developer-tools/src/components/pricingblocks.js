@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Component } from "react";
 import { PiToolboxLight } from "react-icons/pi";
 import { BiLogoReact } from "react-icons/bi";
 import { IoLogoElectron } from "react-icons/io5";
@@ -11,14 +11,55 @@ const PricingBlock = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
   const [email, setEmail] = useState('');
+  const [isValidEmail, setIsValidEmail] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
-  };
 
+      
+  };
+//Test template checkbox
   const logTemplate = () => {
+   if (selectedOption !== null){
+    //Test language checkbox
+    if (selectedOption2 !== null) {
+     // Test Email 
+     // Regular expression to check if the input follows a basic email format
+    const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    // Test the input against the email pattern
+    const isValid = emailPattern.test(email);
+    setIsValidEmail(isValid);
+    if (isValidEmail === true){
+      console.log('Entered email:', email);
+      console.log('Template:', selectedOption);
+      console.log('Language:', selectedOption2);
+      setSuccessMessage('Email sent!');
+      setErrorMessage('');
+    }
+    else{
+      setErrorMessage('Please enter a valid email.');
+      setSuccessMessage('');
+    }
+    // Update the state to indicate if the input is a valid email
+    
+    }
+    else {
+      setErrorMessage('Please choose a language. ');
+    }
+   } 
+   else {
+    setErrorMessage('Please choose a template. ');
+   }
+    
 
     
+
+    
+
+  
     console.log('Entered email:', email);
     console.log('Template:', selectedOption);
     console.log('Language:', selectedOption2);
@@ -195,6 +236,12 @@ const PricingBlock = () => {
               {" "}
               <PiToolboxLight /> Get Tool
             </button>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 d-flex justify-content-center ">
+          {errorMessage && <p className="badge text-bg-danger">{errorMessage}</p>}
+          {successMessage && <p className='badge text-bg-success'>{successMessage}</p>}
           </div>
         </div>
       </div>
