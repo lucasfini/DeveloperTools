@@ -78,7 +78,7 @@ const PricingBlock = () => {
   };
 
   return (
-    <div className="pricingblock-square mb-5 mt-3">
+    <div className="pricingblock-square mb-5 mt-3 ">
       <div className="container">
         <div className="row">
           <div className="col-12 d-flex justify-content-center">
@@ -88,7 +88,7 @@ const PricingBlock = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-6 d-flex justify-content-end">
+          <div className="col-12 col-lg-6 justify-content-center d-flex justify-content-lg-end">
             <div class="checkbox-wrapper-16">
               <label class="checkbox-wrapper">
                 <input
@@ -107,7 +107,7 @@ const PricingBlock = () => {
               </label>
             </div>
           </div>
-          <div className="col-6 d-flex justify-content-start">
+          <div className="col-12 col-lg-6 justify-content-center d-flex justify-content-lg-start mt-lg-0 mt-2">
             <div class="checkbox-wrapper-16">
               <label class="checkbox-wrapper">
                 <input
@@ -128,7 +128,7 @@ const PricingBlock = () => {
           </div>
         </div>
         <div className="row mt-2">
-          <div className="col-6 d-flex justify-content-end">
+          <div className="col-12 col-lg-6 justify-content-center d-flex justify-content-lg-end">
             <div class="checkbox-wrapper-16">
               <label class="checkbox-wrapper">
                 <input
@@ -149,7 +149,7 @@ const PricingBlock = () => {
               </label>
             </div>
           </div>
-          <div className="col-6 d-flex justify-content-start">
+          <div className="col-12 col-lg-6 justify-content-center d-flex justify-content-lg-start mt-2 mt-lg-0">
             <div class="checkbox-wrapper-16">
               <label class="checkbox-wrapper">
                 <input
@@ -178,11 +178,11 @@ const PricingBlock = () => {
 
           <div className="row">
             <div className="d-flex justify-content-center">
-              <div className="col-1 ">
+              <div className="col-2 col-lg-1 ">
                 {" "}
                 <label className="pricingblock-language">Java </label>
               </div>
-              <div className="col-1">
+              <div className="col-2 col-lg-1">
                 <div className="">
                   {" "}
                   <input
@@ -194,10 +194,10 @@ const PricingBlock = () => {
                   ></input>
                 </div>
               </div>
-              <div className="col-2">
+              <div className="col-2 col-lg-2 me-2 me-lg-0 ">
                 <label className="pricingblock-language">Typescript </label>
               </div>
-              <div className="col-1">
+              <div className="col-2 col-lg-1">
                 {" "}
                 <div className="">
               
@@ -223,7 +223,7 @@ const PricingBlock = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 d-flex justify-content-center mb-4">
+          <div className="col-12 col-lg-8 d-flex justify-content-center  justify-content-lg-end mb-4 pe-lg-0">
             <input
               className="pricingblock-email"
               placeholder="Enter Email"
@@ -231,6 +231,9 @@ const PricingBlock = () => {
               onChange={handleEmailChange}
               type='email'
             ></input>
+          </div>
+          <div className="col-12 col-lg-4 d-flex justify-content-center mb-4">
+         
             <button className="pricingblock-button " onClick={logTemplate}>
            
               {" "}
