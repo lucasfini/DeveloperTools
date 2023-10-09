@@ -2,17 +2,17 @@ import React from "react";
 
 const FAQ = () => {
   return (
-    <section id="faq" className="faq-section  p-lg-5 ">
+    <section id="faq" className="faq-section  p-lg-5 mb-1 ">
       <div className="container">
         <div className="row ">
           <div className="col-12 d-flex justify-content-center align-items-center ">
-            <div className="d-flex justify-content-center faq-title mb-5 mt-5 mt-lg-0">
+            <div className="d-flex justify-content-center faq-title  mt-5 mt-lg-0">
               <label>FAQ</label>
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="col-12 mt-5 ">
+          <div className="col-12 mt-2 ">
             <div className="accordion p-lg-5" id="accordionPanelsStayOpenExample"  data-bs-theme="dark">
               <div className="accordion-item">
                 <h2 className="accordion-header">

@@ -9,31 +9,58 @@ const Nav = () => {
   };
 
   return (
-    <section className="nav-section pt-3 pb-3">
+    <section className="nav-section ">
+      <div className="container">
       <div className="row ">
-        <div className="col-md-12 col-12 d-flex ">
-          <div className="col-6 col-sm-6 col-md-4 col-lg-3   d-flex align-items-center justify-content-center justify-content-lg-end justify-content-md-center me-lg-5 p-1 ">
+        <div className="col-md-12 col-12  d-flex ">
+          <div className="col-6 col-sm-6 col-md-4 col-lg-3   d-flex align-items-center justify-content-center justify-content-lg-start justify-content-md-center me-lg-5 p-1 ">
             <a>
               {" "}
+              
               <img
                 src={require("../img/img.JPG")}
                 className="rounded"
                 alt="hah"
-                width="35"
-                height="35"
+                width="45"
+                height="45"
               ></img>
-              <span className="ms-2 nav-title ">General<span className="nav-title-2">Tooling</span></span>
+  
+  {/*
+              <span className=" nav-title ">
+                General<span className="nav-title-2">Tooling</span>
+              </span>
+  */}
             </a>
-            
           </div>
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-center justify-content-start">
-          <button onClick={() => scrollToSection('pricing')}  className="nav-Button me-5">Pricing</button>
-          <button  onClick={() => scrollToSection('faq')} className="nav-Button">FAQ</button>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-9 d-flex align-items-center justify-content-end">
+            <div className="col-2 d-flex justify-content-end p-3">
+              <button
+                onClick={() => scrollToSection("how-it-works")}
+                className="nav-Button "
+              >
+                How it works
+              </button>
+            </div>
+            <div className="col-1 d-flex justify-content-center p-3">
+              <button
+                onClick={() => scrollToSection("pricing")}
+                className="nav-Button"
+              >
+                Pricing
+              </button>
+            </div>
+            <div className="col-1 p-3">
+              <button
+                onClick={() => scrollToSection("faq")}
+                className="nav-Button"
+              >
+                Faq
+              </button>
+            </div>
           </div>
-       
         </div>
       </div>
-
+      </div>
     </section>
   );
 };
