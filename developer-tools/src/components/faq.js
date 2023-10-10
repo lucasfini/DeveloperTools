@@ -2,7 +2,7 @@ import React from "react";
 
 const FAQ = () => {
   return (
-    <section id="faq" className="faq-section  p-lg-5 mb-1 ">
+    <section id="faq" className="faq-section  p-lg-5 ">
       <div className="container">
         <div className="row ">
           <div className="col-12 d-flex justify-content-center align-items-center ">

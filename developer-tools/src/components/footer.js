@@ -11,10 +11,10 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer-section ">
-      <div className="container">
-        <div className="row p-5">
-          <div className="col-12 d-flex justify-content-center justify-content-md-start flex-column align-items-center align-items-lg-start align-items-md-start col-sm-4 col-md-4 col-lg-4">
+    <div className="footer-section mt-1 ">
+      <div className="container ">
+        <div className="row pt-3 ps-5 pe-5 pb-3">
+          <div className="col-12 d-flex  justify-content-md-center flex-column align-items-center align-items-lg-start align-items-md-start col-sm-4 col-md-4 col-lg-4">
             <div className="row ">
               <div className="col-12">
                 <a>
@@ -32,17 +32,12 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="row">
-              <div className="col-12">
-                <label className="footer-caption">Develop with ease</label>
+            <div className="row ">
+              <div className="col-12 ">
+                <label className="footer-caption">Empower <span className="footer-caption-2">yourself</span></label>
               </div>
             </div>
 
-            <div className="row">
-              <div className="col-12">
-                <label className="footer-copyright">Copyrigt C 2023 - All Rights Reserved </label>
-              </div>
-            </div>
           </div>
           <div className="col-12 col-sm-8  d-flex ">
             <div className="col-6 d-flex align-items-center  flex-column">
@@ -53,15 +48,22 @@ const Footer = () => {
               </div>
               <div className="row">
                 <div className="col-12">
-                  <button  onClick={() => scrollToSection('faq')}  type="button" className="footer-button">
-                    Faq
+                  <button  onClick={() => scrollToSection('how-it-works')}  type="button" className="footer-button">
+                    How it works
+                  </button>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-12">
+                  <button  onClick={() => scrollToSection('pricing')}  type="button" className="footer-button">
+                    Pricing
                   </button>
                 </div>
               </div>
 
               <div className="row">
                 <div className="col-12">
-                  <button  onClick={() => scrollToSection('pricing')}  className="footer-button"> Pricing </button>
+                  <button  onClick={() => scrollToSection('faq')}  className="footer-button"> FAQ </button>
                 </div>
               </div>
             </div>
@@ -83,8 +85,14 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+           
           </div>
         </div>
+        <div className="row pb-3 ">
+              <div className="col-12 d-flex justify-content-center align-items-center footer-separator">
+                <label className="footer-copyright">© 2023 General Tooling. All Rights reserved</label>
+              </div>
+            </div>
       </div>
     </div>
   );

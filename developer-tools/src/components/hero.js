@@ -5,6 +5,16 @@ import backgroundImage from "../img/hero-img-4.jpg";
 import Nav from "./nav";
 
 const Hero = () => {
+
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
   const heroStyles = {
     background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
     backgroundSize: "cover",
@@ -54,6 +64,7 @@ const Hero = () => {
                 <div className="col-12 col-lg-12 d-flex justify-content-center  align-items-center pt-4">
                   <button
                     role="button"
+                    onClick={() => scrollToSection("pricing")}
                     className="hero-button align-items-center d-flex ps-5 pt-3 pb-3 pe-5 "
                   >
                     <IconContext.Provider

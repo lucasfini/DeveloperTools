@@ -401,6 +401,76 @@ border : solid 2px var(--10)  ;
 
 }
 
+
+
+
+  .checkbox-wrapper-2 .ikxBAC {
+    appearance: none;
+    background-color: #dfe1e4;
+    border-radius: 72px;
+    border-style: none;
+    flex-shrink: 0;
+    height: 20px;
+    margin: 0;
+    position: relative;
+    width: 30px;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC::before {
+    bottom: -6px;
+    content: "";
+    left: -6px;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC,
+  .checkbox-wrapper-2 .ikxBAC::after {
+    transition: all 100ms ease-out;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC::after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 14px;
+    left: 3px;
+    position: absolute;
+    top: 3px;
+    width: 14px;
+  }
+
+  .checkbox-wrapper-2 input[type=checkbox] {
+    cursor: default;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:hover {
+    background-color: #c9cbcd;
+    transition-duration: 0s;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:checked {
+    background-color: #6e79d6;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:checked::after {
+    background-color: #fff;
+    left: 13px;
+  }
+
+  .checkbox-wrapper-2 :focus:not(.focus-visible) {
+    outline: 0;
+  }
+
+  .checkbox-wrapper-2 .ikxBAC:checked:hover {
+    background-color: #535db3;
+  }
+
+
+
+
+
 .pricingblock-language{
   color: var(--5);
   font-family: 'poppins';
@@ -424,6 +494,44 @@ border : solid 2px var(--10)  ;
   list-style: none;
   padding: 0;
 }
+
+.pricing-dropdown{
+  background-color: var(--11);
+  border: none;
+  color: var(--8);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.pricing-dropdown:hover{
+  background-color: var(--27);
+  border: none;
+  color: var(--8);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.pricing-dropdown:focus{
+  background-color: var(--11);
+  border: none;
+  color: var(--8);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.pricing-dropdown-item{
+  background-color: var(--8);
+  border: none;
+ 
+}
+
+.pricing-dropdown-button:hover{
+
+  background-color: var(--27);
+   border: none;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
 
 .pricing-list-item {
   padding-top: 5px;
@@ -564,10 +672,12 @@ height: 36px;
 /* CSS */
 .pricingblock-submit-button{
   background-color: var(--27);
-  border-radius: 10px;
-  color: var(--11);
+  border-radius: 3px;
+  color: var(--8);
   cursor: pointer;
-font-weight: 400;
+font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family:  'Lato', sans-serif;
   font-size: 13px;
   height: 36px;
@@ -577,7 +687,8 @@ font-weight: 400;
 }
 
 .pricingblock-submit-button:hover {
-  background-color: #f7fafa;
+  background-color: transparent;
+  border: 1px solid var(--27);
 }
 
 .pricingblock-submit-button:focus {
@@ -737,8 +848,7 @@ font-weight: 400;
   .accordion{
 
     --bs-accordion-bg: transparent;
-    --bs-accordion-btn-focus-border-color: green;
-    --bs-accordion-active-color: var(--6);
+
    
 
   }
@@ -762,7 +872,7 @@ font-weight: 400;
   color: var(--8);
   opacity: 100%;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -774,6 +884,8 @@ font-weight: 400;
 .accordion-button:not(.collapsed){
 background-color: var(--27);
 color: var(--11);
+font-weight: bolder;
+font-size: 15px;
 
 }
 
@@ -781,32 +893,44 @@ color: var(--11);
   filter: brightness(0%)  }
 
   .footer-section{
-    background-color: var(--6);
+    background-color: var(--11);
   }
 
 
   .footer-caption{
     background-color: transparent;
     border: none;
-    color: var(--4);
+    color: var(--27);
     font-weight: bold;
-    font-size: small;
+    font-size: medium;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .footer-caption-2{
+    background-color: transparent;
+    border: none;
+    color: var(--8);
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Lato', sans-serif;
   }
 
   .footer-copyright{
     opacity: 50%;
-    color: var(--4);
-    font-size: x-small;
+    color: var(--8);
+    font-size: medium;
+    font-family: 'Lato', sans-serif;
   }
 
 
   .footer-button{
     background-color: transparent;
     border: none;
-    color: var(--4);
+    color: var(--8);
     font-size: small;
     opacity: 90%;
     font-weight: 300;
+    font-family: 'Lato', sans-serif;
 
   }
 
@@ -815,13 +939,20 @@ color: var(--11);
   }
 
   .footer-label{
-    color: var(--10);
-    opacity: 70%;
+    color: var(--27);
+    opacity: 100%;
     font-weight: bold;
     font-size: 13px;
-    font-family: 'poppins';
+    font-family: 'Lato', sans-serif;
   }
 
 
 
+  .footer-separator {
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid var(--8); /* Adjust the color and thickness as needed */
+   opacity: 0.3;
+    /* Adjust the spacing as needed */
+  }
 

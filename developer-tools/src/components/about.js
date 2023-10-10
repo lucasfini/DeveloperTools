@@ -8,7 +8,7 @@ import {LiaCloneSolid} from 'react-icons/lia';
 
 const About = () => {
   return (
-    <section className="about-section mt-1 mb-1 pb-5 ">
+    <section id="how-it-works" className="about-section mt-1 mb-1 pb-5 ">
       <div className="container ">
         <div className="row  ">
           <div className="col-12 d-flex justify-content-center ">
