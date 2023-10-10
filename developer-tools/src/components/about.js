@@ -73,7 +73,7 @@ const About = () => {
                       <div className="row d-flex align-items-center">
                         <div className="col-12 d-flex  ">
                           <span className="about-d">
-                          Click <span className="about-special-word">Get Tool</span> Enter your email, then click <span className="about-special-word">Submit.</span>
+                          Click <span className="about-special-word">Get Tool.</span> Enter your email, then click <span className="about-special-word">Submit.</span>
                           </span>
                         </div>
                       </div>
