@@ -58,7 +58,7 @@ const Pricing = () => {
             <div className="col-xl-12 d-flex justify-content-center">
               <div className="dropdown-center mb-3 ">
                 <button
-                  class="btn btn-secondary dropdown-toggle pricing-dropdown"
+                  className=" pricing-btn dropdown-toggle pricing-dropdown  "
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -66,13 +66,13 @@ const Pricing = () => {
                   id="dropdown-basic"
                 >
                   {selectedLanguage === "JavaScript" && (
-                    <i className="">
+                    <i className="priceblock-icon">
                       {" "}
                       <DiJavascript1 />
                     </i>
                   )}
                   {selectedLanguage === "TypeScript" && (
-                    <i className="">
+                    <i className="priceblock-icon">
                       {" "}
                       <BiLogoTypescript />
                     </i>
@@ -223,6 +223,11 @@ const Pricing = () => {
           </div>
         </div>
           )}
+          <div className="row">
+            <div className="col-12">
+              <label>With mor</label>
+            </div>
+          </div>
       </div>
     </section>
   );

@@ -516,9 +516,19 @@ border : solid 2px var(--10)  ;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+.pricing-btn{
+  font-size: small;
+  font-weight: bold;
+ font-family: 'Lato', sans-serif;
+  padding:  5px 30px;
+  border-radius: 10px;
+ border:  var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+}
+
 .pricing-dropdown-item{
   background-color: var(--8);
   border: none;
+  border:var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color)
  
 }
 
@@ -527,6 +537,7 @@ border : solid 2px var(--10)  ;
   background-color: var(--27);
    border: none;
    border-radius: 5px;
+   color:var(--8);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -562,6 +573,11 @@ border : solid 2px var(--10)  ;
   font-family: 'Lato', sans-serif;
 
 }
+
+.priceblock-icon{font-size: 20px;
+margin-right: 1px;
+}
+
 
 .separator {
   width: 100%;
