@@ -41,7 +41,7 @@ const Pricing = () => {
   const electronName = "ELECTRON";
 
   return (
-    <section id="pricing" className="pricing-section m-3">
+    <section id="pricing" className="pricing-section m-5">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -119,115 +119,125 @@ const Pricing = () => {
             </div>
           </div>
         </center>
-        {selectedLanguage === 'JavaScript' && (
-        <div className="row">
-          <div className="col-3 mb-5">
-            <center>
-              <PricingBlock1
-                logo={logo1}
-                productName={reactName}
-                items={productItems}
-                type={type1}
-                price={price1}
-              />
-              {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-            </center>
-          </div>
-          <div className="col-3 mb-5">
-            <center>
-              <PricingBlock1
-                logo={logo2}
-                productName={gptName}
-                items={productItems}
-                type={type1}
-                price={price1}
-              />
-              {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-            </center>
-          </div>
-          <div className="col-3 mb-5">
-            <center>
-              <PricingBlock1
-                logo={logo3}
-                productName={openaiName}
-                items={productItems}
-                type={type1}
-                price={price1}
-              />
-              {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-            </center>
-          </div>
-          <div className="col-3 mb-5">
-            <center>
-              <PricingBlock1
-                logo={logo4}
-                productName={electronName}
-                items={productItems}
-                type={type1}
-                price={price1}
-              />
-              {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-            </center>
-          </div>
-        </div>
-        )}
-          {selectedLanguage === 'TypeScript' && (
-        <div className="row">
-          <div className="col-3 mb-5">
-            <center>
-              <PricingBlock1
-                logo={logo1}
-                productName={reactName}
-                items={productItems}
-                type={type2}
-                price={price1}
-              />
-              {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-            </center>
-          </div>
-          <div className="col-3 mb-5">
-            <center>
-              <PricingBlock1
-                logo={logo2}
-                productName={gptName}
-                items={productItems}
-                type={type2}
-                price={price1}
-              />
-              {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-            </center>
-          </div>
-          <div className="col-3 mb-5">
-            <center>
-              <PricingBlock1
-                logo={logo3}
-                productName={openaiName}
-                items={productItems}
-                type={type2}
-                price={price1}
-              />
-              {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-            </center>
-          </div>
-          <div className="col-3 mb-5">
-            <center>
-              <PricingBlock1
-                logo={logo4}
-                productName={electronName}
-                items={productItems}
-                type={type2}
-                price={price1}
-              />
-              {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-            </center>
-          </div>
-        </div>
-          )}
+        {selectedLanguage === "JavaScript" && (
           <div className="row">
-            <div className="col-12">
-              <label>With mor</label>
+            <div className="col-3 mb-5">
+              <center>
+                <PricingBlock1
+                  id={1}
+                  logo={logo1}
+                  productName={reactName}
+                  items={productItems}
+                  type={type1}
+                  price={price1}
+                />
+                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+              </center>
+            </div>
+            <div className="col-3 mb-5">
+              <center>
+                <PricingBlock1
+                  id={2}
+                  logo={logo2}
+                  productName={gptName}
+                  items={productItems}
+                  type={type1}
+                  price={price1}
+                />
+                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+              </center>
+            </div>
+            <div className="col-3 mb-5">
+              <center>
+                <PricingBlock1
+                  id={3}
+                  logo={logo3}
+                  productName={openaiName}
+                  items={productItems}
+                  type={type1}
+                  price={price1}
+                />
+                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+              </center>
+            </div>
+            <div className="col-3 mb-5">
+              <center>
+                <PricingBlock1
+                  id={4}
+                  logo={logo4}
+                  productName={electronName}
+                  items={productItems}
+                  type={type1}
+                  price={price1}
+                />
+                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+              </center>
             </div>
           </div>
+        )}
+        {selectedLanguage === "TypeScript" && (
+          <div className="row">
+            <div className="col-3 mb-5">
+              <center>
+                <PricingBlock1
+                  id={5}
+                  logo={logo1}
+                  productName={reactName}
+                  items={productItems}
+                  type={type2}
+                  price={price1}
+                />
+                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+              </center>
+            </div>
+            <div className="col-3 mb-5">
+              <center>
+                <PricingBlock1
+                  id={6}
+                  logo={logo2}
+                  productName={gptName}
+                  items={productItems}
+                  type={type2}
+                  price={price1}
+                />
+                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+              </center>
+            </div>
+            <div className="col-3 mb-5">
+              <center>
+                <PricingBlock1
+                  id={7}
+                  logo={logo3}
+                  productName={openaiName}
+                  items={productItems}
+                  type={type2}
+                  price={price1}
+                />
+                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+              </center>
+            </div>
+            <div className="col-3 mb-5">
+              <center>
+                <PricingBlock1
+                  id={8}
+                  logo={logo4}
+                  productName={electronName}
+                  items={productItems}
+                  type={type2}
+                  price={price1}
+                />
+                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+              </center>
+            </div>
+          </div>
+        )}
+    
+        <div className="row d-flex h-100 mb-5 justify-content-center">
+          <div className="col-12 d-flex h-100 align-items-end justify-content-center">
+            <label className="pricing-soon-text ">With more tools coming <span className="pricing-soon-text-2">soon.</span></label>
+          </div>
+        </div>
+   
       </div>
     </section>
   );
