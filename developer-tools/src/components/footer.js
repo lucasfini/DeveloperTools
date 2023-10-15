@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer-section mt-1 ">
+    <div className="footer-section  ">
       <div className="container ">
         <div className="row pt-3 ps-5 pe-5 pb-3">
           <div className="col-12 d-flex  justify-content-md-center flex-column align-items-center align-items-lg-start align-items-md-start col-sm-4 col-md-4 col-lg-4">
@@ -26,8 +26,8 @@ const Footer = () => {
                     width="35"
                     height="35"
                   ></img>
-                  <span className="ms-2 nav-title ">
-                    General<span className="nav-title-2">Tooling</span>
+                  <span className="ms-2 footer-title ">
+                    General<span className="footer-title-2">Tooling</span>
                   </span>
                 </a>
               </div>

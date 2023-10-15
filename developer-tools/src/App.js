@@ -8,8 +8,16 @@ import FAQ from './components/faq';
 import Footer from './components/footer';
 
 
+
+
+
 function App() {
+
+  
+
   return (
+
+    
     <div className="">
       <Hero/>
       <About/>

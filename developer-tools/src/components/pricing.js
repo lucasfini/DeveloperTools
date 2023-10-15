@@ -12,7 +12,7 @@ import { IoIosCheckmark } from "react-icons/io";
 import { TfiMoney } from "react-icons/tfi";
 import { DiJavascript1 } from "react-icons/di";
 import { BiLogoTypescript } from "react-icons/bi";
-
+import Fade from "react-reveal/Fade";
 const Pricing = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("JavaScript");
 
@@ -32,6 +32,15 @@ const Pricing = () => {
     "Consider now provided laughter boy landlord dashwood.",
   ];
 
+  const productItems1 = [
+    "Quick six blind smart out burst. ",
+    "Wrong do point avoid by fruit learn or in death.",
+    "Consider now provided laughter boy landlord dashwood.",
+  ];
+  const productItems2 = [
+    "Quick six blind smart out burst. ",
+    "Wrong do point avoid by fruit learn or in death.",
+  ];
   const price1 = "0";
   const type1 = "JAVASCRIPT";
   const type2 = "TYPESCRIPT";
@@ -41,7 +50,7 @@ const Pricing = () => {
   const electronName = "ELECTRON";
 
   return (
-    <section id="pricing" className="pricing-section m-5">
+    <section id="pricing" className="pricing-section ">
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -120,124 +129,158 @@ const Pricing = () => {
           </div>
         </center>
         {selectedLanguage === "JavaScript" && (
-          <div className="row">
-            <div className="col-3 mb-5">
-              <center>
-                <PricingBlock1
-                  id={1}
-                  logo={logo1}
-                  productName={reactName}
-                  items={productItems}
-                  type={type1}
-                  price={price1}
-                />
-                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-              </center>
+          <Fade bottom cascade>
+            <div className="row">
+              <div className="col-3 mb-5 ">
+                <center>
+                  <PricingBlock1
+                    id={1}
+                    logo={logo1}
+                    productName={reactName}
+                    items={productItems}
+                    type={type1}
+                    price={price1}
+                  />
+                  {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+                </center>
+              </div>
+              <div className="col-3 mb-5 ">
+                <center>
+                  <PricingBlock1
+                    id={2}
+                    logo={logo2}
+                    productName={gptName}
+                    items={productItems1}
+                    type={type1}
+                    price={price1}
+                  />
+                  {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+                </center>
+              </div>
+              <div className="col-3 mb-5 ">
+                <center>
+                  <PricingBlock1
+                    id={3}
+                    logo={logo3}
+                    productName={openaiName}
+                    items={productItems}
+                    type={type1}
+                    price={price1}
+                  />
+                  {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+                </center>
+              </div>
+              <div className="col-3 mb-5 ">
+                <center>
+                  <PricingBlock1
+                    id={4}
+                    logo={logo4}
+                    productName={electronName}
+                    items={productItems2}
+                    type={type1}
+                    price={price1}
+                  />
+                  {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+                </center>
+              </div>
             </div>
-            <div className="col-3 mb-5">
-              <center>
-                <PricingBlock1
-                  id={2}
-                  logo={logo2}
-                  productName={gptName}
-                  items={productItems}
-                  type={type1}
-                  price={price1}
-                />
-                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-              </center>
-            </div>
-            <div className="col-3 mb-5">
-              <center>
-                <PricingBlock1
-                  id={3}
-                  logo={logo3}
-                  productName={openaiName}
-                  items={productItems}
-                  type={type1}
-                  price={price1}
-                />
-                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-              </center>
-            </div>
-            <div className="col-3 mb-5">
-              <center>
-                <PricingBlock1
-                  id={4}
-                  logo={logo4}
-                  productName={electronName}
-                  items={productItems}
-                  type={type1}
-                  price={price1}
-                />
-                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-              </center>
-            </div>
-          </div>
+          </Fade>
         )}
         {selectedLanguage === "TypeScript" && (
-          <div className="row">
-            <div className="col-3 mb-5">
-              <center>
-                <PricingBlock1
-                  id={5}
-                  logo={logo1}
-                  productName={reactName}
-                  items={productItems}
-                  type={type2}
-                  price={price1}
-                />
-                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-              </center>
+          <Fade bottom cascade>
+            <div className="row">
+              <div className="col-3 mb-5">
+                <center>
+                  <PricingBlock1
+                    id={5}
+                    logo={logo1}
+                    productName={reactName}
+                    items={productItems}
+                    type={type2}
+                    price={price1}
+                  />
+                  {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+                </center>
+              </div>
+              <div className="col-3 mb-5">
+                <center>
+                  <PricingBlock1
+                    id={6}
+                    logo={logo2}
+                    productName={gptName}
+                    items={productItems1}
+                    type={type2}
+                    price={price1}
+                  />
+                  {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+                </center>
+              </div>
+              <div className="col-3 mb-5">
+                <center>
+                  <PricingBlock1
+                    id={7}
+                    logo={logo3}
+                    productName={openaiName}
+                    items={productItems}
+                    type={type2}
+                    price={price1}
+                  />
+                  {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+                </center>
+              </div>
+              <div className="col-3 mb-5">
+                <center>
+                  <PricingBlock1
+                    id={8}
+                    logo={logo4}
+                    productName={electronName}
+                    items={productItems2}
+                    type={type2}
+                    price={price1}
+                  />
+                  {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
+                </center>
+              </div>
             </div>
-            <div className="col-3 mb-5">
-              <center>
-                <PricingBlock1
-                  id={6}
-                  logo={logo2}
-                  productName={gptName}
-                  items={productItems}
-                  type={type2}
-                  price={price1}
-                />
-                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-              </center>
-            </div>
-            <div className="col-3 mb-5">
-              <center>
-                <PricingBlock1
-                  id={7}
-                  logo={logo3}
-                  productName={openaiName}
-                  items={productItems}
-                  type={type2}
-                  price={price1}
-                />
-                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-              </center>
-            </div>
-            <div className="col-3 mb-5">
-              <center>
-                <PricingBlock1
-                  id={8}
-                  logo={logo4}
-                  productName={electronName}
-                  items={productItems}
-                  type={type2}
-                  price={price1}
-                />
-                {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
-              </center>
-            </div>
-          </div>
+          </Fade>
         )}
-    
-        <div className="row d-flex h-100 mb-5 justify-content-center">
-          <div className="col-12 d-flex h-100 align-items-end justify-content-center">
-            <label className="pricing-soon-text ">With more tools coming <span className="pricing-soon-text-2">soon.</span></label>
+
+
+        <div>
+          <div className="row d-flex h-100  justify-content-center">
+            <div className="col-12 d-flex h-100 align-items-end justify-content-center">
+              <label className="pricing-soon-text m-3 ">
+                With more tools coming{" "}
+                <span className="pricing-soon-text-2">soon.</span>
+              </label>
+            </div>
           </div>
+          <Fade left cascade>
+          <div className="row d-flex h-100 pb-4  justify-content-center">
+            <div className="col-2 d-flex h-100 align-items-center justify-content-center">
+              <label className="pricing-more-tools d-flex justify-content-center ">
+                {" "}
+               Json Beautifier
+              </label>
+              </div>
+            
+              <div className="col-2 d-flex h-100 align-items-center justify-content-center">
+              <label className="pricing-more-tools  d-flex justify-content-center ">
+                {" "}
+                DB analytics tool  
+              </label>
+              </div>
+             
+              <div className="col-2 d-flex h-100 align-items-center justify-content-center">
+              <label className="pricing-more-tools d-flex justify-content-center ">
+                {" "}
+                OS images
+              </label>
+            </div>
+          </div>
+  
+          </Fade>
         </div>
-   
       </div>
     </section>
   );

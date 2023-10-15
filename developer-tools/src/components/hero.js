@@ -3,10 +3,8 @@ import { PiToolboxLight } from "react-icons/pi";
 import { IconContext } from "react-icons/lib";
 import backgroundImage from "../img/hero-img-4.jpg";
 import Nav from "./nav";
-
+import Fade from "react-reveal/Fade";
 const Hero = () => {
-
-
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -14,22 +12,17 @@ const Hero = () => {
     }
   };
 
-
   const heroStyles = {
-    background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-
     minHeight: "100vh", // Set a minimum height for the hero section
+    filter: `blur(1px)`,
 
     // You can add more CSS properties as needed
   };
   return (
-    <section
-      id="section1"
-      style={heroStyles}
-      className="hero-section pt-3 pb-3 "
-    >
+    <section id="section1" className="hero-section pt-3 pb-3 ">
       <div className="row">
         <div className="col-12 mb-5">
           <Nav />
@@ -38,26 +31,31 @@ const Hero = () => {
       <div className="container">
         <div className="row justify-content-center align-items-center mt-5">
           <div className="col-lg-12 d-flex flex-column p-5">
+            <Fade top cascade>
+              <div>
             <center>
               <div className="row ">
                 <div className="col-12 col-lg-12 d-flex  align-items-center  justify-content-center   ">
-                  <h1 className="hero-title">
+                  <h1 className=" hero-title">
                     {" "}
-                    <p className="hero-title-2">SUPERCHARGE</p> your development
-                  workflow
+                    <p className="hero-title-2 ">SUPERCHARGE</p> your
+                    development workflow
                   </h1>
                 </div>
               </div>
             </center>
             <div className="row  justify-content-center align-items-center ">
               {
-              <div className="col-12 col-lg-12  d-flex align-items-center justify-content-center pt-4">
-                <p className="hero-description ">
-                  Empowering Developers to Code Faster, Smarter, and with Confidence.
-                </p>
-              </div>
-  }
+                <div className="col-12 col-lg-12  d-flex align-items-center justify-content-center pt-4">
+                  <p className=" hero-description  ">
+                    Empowering Developers to Code Faster, Smarter, and with
+                    Confidence.
+                  </p>
+                </div>
+              }
             </div>
+            </div>
+            </Fade>
 
             <div className="row ">
               <center>

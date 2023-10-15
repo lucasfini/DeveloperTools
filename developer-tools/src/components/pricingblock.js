@@ -7,7 +7,7 @@ import {IoIosArrowDown, IoIosArrowUp} from 'react-icons/io';
 
 const PricingBlock1 = ({ id, logo, productName, price, items, type }) => {
   const [showEmailInput, setShowEmailInput] = useState(false);
-  const [showFullCard, SetShowFullCard] = useState(false);
+  const [showFullCard, SetShowFullCard] = useState(true);
   const [email, setEmail] = useState("");
   const cardHeight = showFullCard ? 'auto' : '300px';
   const handleGetToolClick = () => {
@@ -54,7 +54,7 @@ const PricingBlock1 = ({ id, logo, productName, price, items, type }) => {
           </div>
           
          
-            <div className="row ps-5 pe-5 collapse" id={`collapse-Card-${id}`}>
+            <div className="row ps-5 pe-5 collapse show" id={`collapse-Card-${id}`}>
               <div className="col-12">
                 <ul className="pricing-list">
                   {items.map((item, index) => (
@@ -90,7 +90,7 @@ const PricingBlock1 = ({ id, logo, productName, price, items, type }) => {
                </span>
                <span className="priceblock-price">
                  {price}
-                 <span className="priceblock-month">/month</span>
+                 <span className="priceblock-month"></span>
                </span>
              </div>
            </div>
@@ -121,7 +121,7 @@ const PricingBlock1 = ({ id, logo, productName, price, items, type }) => {
                   onClick={handleGetToolClick}
                   className="pricingblock-button p-2"
                 >
-                  Get Tool
+                 Start now
                 </button>
               )}
             </div>
