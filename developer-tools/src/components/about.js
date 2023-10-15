@@ -14,7 +14,7 @@ const About = () => {
 
   const instruction1 = {
     number: 1,
-    title: "Product",
+    title: "Select",
 
     body: (
       <span>
@@ -27,7 +27,7 @@ const About = () => {
 
   const instruction2 = {
     number: 2,
-    title: "Email",
+    title: "Access",
 
     body: (
       <span>
@@ -47,12 +47,12 @@ const About = () => {
 
   const instruction3 = {
     number: "3",
-    title: "Github",
+    title: "Receive",
 
     body: (
       <span>
         A <span className="about-special-word">Git </span>
-        link will be sent to the email entered.
+         will be promptly sent to the provided email address.
       </span>
     ),
     img: <AiFillGithub />,
@@ -60,12 +60,11 @@ const About = () => {
 
   const instruction4 = {
     number: 4,
-    title: "Download",
+    title: "Acquire",
 
     body: (
       <span>
-        <span className="about-special-word">Download/Clone </span> the git to
-        recieve your product.
+        <span className="about-special-word">Download  </span>or <span className="about-special-word">Clone </span> the Git repository using the link from your email.
       </span>
     ),
     img: <PiDownloadSimpleLight />,
