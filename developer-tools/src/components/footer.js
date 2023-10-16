@@ -33,7 +33,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="row ">
-              <div className="col-12 ">
+              <div className="col-12 mb-3 mb-lg-0  ">
                 <label className="footer-caption">Empower <span className="footer-caption-2">yourself</span></label>
               </div>
             </div>

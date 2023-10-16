@@ -6,7 +6,7 @@ const FAQ = () => {
       <div className="container">
         <div className="row ">
           <div className="col-12 d-flex justify-content-center align-items-center ">
-            <div className="d-flex justify-content-center faq-title  mt-5 mt-lg-0">
+            <div className="d-flex justify-content-center faq-title  mt-5 mb-4 mt-lg-0">
               <label>FAQ</label>
             </div>
           </div>

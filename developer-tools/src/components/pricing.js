@@ -131,7 +131,7 @@ const Pricing = () => {
         {selectedLanguage === "JavaScript" && (
           <Fade bottom cascade>
             <div className="row">
-              <div className="col-3 mb-5 ">
+              <div className="col-12 col-lg-3 col-md-6 mb-5 ">
                 <center>
                   <PricingBlock1
                     id={1}
@@ -144,7 +144,7 @@ const Pricing = () => {
                   {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
                 </center>
               </div>
-              <div className="col-3 mb-5 ">
+              <div className="col-12  col-lg-3 col-md-6 mb-5 ">
                 <center>
                   <PricingBlock1
                     id={2}
@@ -157,7 +157,7 @@ const Pricing = () => {
                   {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
                 </center>
               </div>
-              <div className="col-3 mb-5 ">
+              <div className="col-12  col-lg-3 col-md-6 mb-5 ">
                 <center>
                   <PricingBlock1
                     id={3}
@@ -170,7 +170,7 @@ const Pricing = () => {
                   {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
                 </center>
               </div>
-              <div className="col-3 mb-5 ">
+              <div className="col-12  col-lg-3 col-md-6 mb-5 ">
                 <center>
                   <PricingBlock1
                     id={4}
@@ -189,7 +189,7 @@ const Pricing = () => {
         {selectedLanguage === "TypeScript" && (
           <Fade bottom cascade>
             <div className="row">
-              <div className="col-3 mb-5">
+              <div className="col-12  col-lg-3 col-md-6 mb-5">
                 <center>
                   <PricingBlock1
                     id={5}
@@ -202,7 +202,7 @@ const Pricing = () => {
                   {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
                 </center>
               </div>
-              <div className="col-3 mb-5">
+              <div className="col-12  col-lg-3 col-md-6 mb-5">
                 <center>
                   <PricingBlock1
                     id={6}
@@ -215,7 +215,7 @@ const Pricing = () => {
                   {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
                 </center>
               </div>
-              <div className="col-3 mb-5">
+              <div className="col-12  col-lg-3 col-md-6 mb-5">
                 <center>
                   <PricingBlock1
                     id={7}
@@ -228,7 +228,7 @@ const Pricing = () => {
                   {/*  <PricingBlock productName='React Template' price='20' points='Include' /> */}
                 </center>
               </div>
-              <div className="col-3 mb-5">
+              <div className="col-12  col-lg-3 col-md-6 mb-5">
                 <center>
                   <PricingBlock1
                     id={8}
@@ -257,21 +257,21 @@ const Pricing = () => {
           </div>
           <Fade left cascade>
           <div className="row d-flex h-100 pb-4  justify-content-center">
-            <div className="col-2 d-flex h-100 align-items-center justify-content-center">
+            <div className="col-12  col-lg-3 col-md-6 m-1 d-flex h-100 align-items-center justify-content-center">
               <label className="pricing-more-tools d-flex justify-content-center ">
                 {" "}
                Json Beautifier
               </label>
               </div>
             
-              <div className="col-2 d-flex h-100 align-items-center justify-content-center">
+              <div className="col-12  col-lg-3 col-md-6 m-1 d-flex h-100 align-items-center justify-content-center">
               <label className="pricing-more-tools  d-flex justify-content-center ">
                 {" "}
                 DB analytics tool  
               </label>
               </div>
              
-              <div className="col-2 d-flex h-100 align-items-center justify-content-center">
+              <div className="col-12  col-lg-3 col-md-6 m-1  d-flex h-100 align-items-center justify-content-center">
               <label className="pricing-more-tools d-flex justify-content-center ">
                 {" "}
                 OS images

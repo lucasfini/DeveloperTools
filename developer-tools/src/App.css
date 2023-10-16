@@ -99,11 +99,26 @@ color: var(--8);
 
 }
 
+.nav-Button:hover{
+  text-decoration: underline;
+}
+
 .nav-section{
   background-color: transparent;
   
 
   
+}
+
+.navbar-toggler{
+  border: none;
+
+}
+
+.navbar-toggler:focus{
+  border: 1px solid var(--27);
+  box-shadow: none;
+
 }
 
 .nav-Button:hover{
@@ -135,22 +150,14 @@ color: var(--8);
   color: var(--8);
 }
 
-.hero-title{
-  font-family: 'Lato', sans-serif;
-  color: var(--8);
-  font-weight: bold;
-  font-size: 85px;
-
-}
-
 .hero-section{
 
   position: relative;
   background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/hero-img-4.jpg') center/cover no-repeat;
   background-size: 'cover';
   background-position: 'center';
-  z-index: -1;
   min-height: 100vh;
+  z-index:1;
 
   &::before {
     content: '';
@@ -166,16 +173,75 @@ color: var(--8);
  
 }
 
+
+
+.hero-title{
+  font-family: 'Lato', sans-serif;
+  color: var(--8);
+  font-weight: bold;
+  font-size: 85px;
+  
+
+}
+
 .hero-title-2{
   font-family: 'Lato', sans-serif;
   font-weight: bolder;
   background-size: 100%;
   color: var(--27);
-  font-size: 85px;
-  z-index: 1;
+  font-size: 95px;
+ 
 }
 
 
+@media screen and (min-width: 320px) {
+  .hero-title {
+    font-size: 40px;
+  }
+
+
+  .hero-title-2{
+    font-size: 50px;
+  }
+
+  .hero-description{
+    font-size: 15px;
+  }
+
+
+    
+
+}
+
+@media screen and (min-width: 700px) {
+  .hero-title {
+    font-size: 60px;
+  }
+
+
+  .hero-title-2{
+    font-size: 70px;
+  }
+
+  .hero-description{
+    font-size: 25px;
+  }
+}
+
+
+
+@media screen and (min-width: 1400px) {
+  .hero-title {
+    font-size: 85px;
+  }
+  .hero-title-2{
+    font-size: 85px;
+  }
+
+  .hero-description{
+    font-size: 30px;
+  }
+}
 
 
 .hero-description{
@@ -183,7 +249,6 @@ color: var(--8);
   opacity: 0.7;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 30px;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -197,18 +262,6 @@ border : solid 2px var(--10)  ;
 
 }
 
-@media (max-width: 768px) {
-  .hero-title{
-    font-size: 35px;
-    font-weight: bolder;
-    filter: blur(0pc(100%)) !important;
-  }
-  .hero-description {
-    font-size: 16px; /* Minimum font size */
-    
-  }
-  
-}
 
 /* CSS */
 .hero-button {
@@ -269,8 +322,6 @@ border : solid 2px var(--10)  ;
   border-radius: 5px;
   padding:2px;
   margin: 3px;
-  width: 60%;
-  height: 80px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   
 }
@@ -312,7 +363,6 @@ border : solid 2px var(--10)  ;
   color: var(--10);
   opacity: 100%;
   font-weight: bolder;
-  font-size: 15px;
   font-family: 'Lato', sans-serif;
   
   
@@ -329,7 +379,6 @@ border : solid 2px var(--10)  ;
 
 
   color: var(--11);
-  font-size: 18px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
  
@@ -337,13 +386,275 @@ border : solid 2px var(--10)  ;
 
 }
 
+
+@media screen and (min-width: 320px) {
+
+
+  .faq-title{
+    font-size: 22px;
+  }
+
+  .pricing-title{
+    font-size: 22px;
+ 
+       
+   }
+   .pricing-title-2{
+   
+       font-size: 22px;
+
+   }
+   
+
+
+  .about-title{
+  font-size: 22px;
+  }
+  .about-title-2{
+    font-size: 22px;
+  }
+  
+  
+  .icon-box-1{
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .icon-box-2{
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .icon-box-3{
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+  }
+  .icon-box-4{
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+  }
+  .about-d{
+   font-size: 11px;
+  }
+  .about-desc{
+    font-size: 13px;
+  }
+  .about-number{
+  font-size: 10px;
+  }
+  
+  .about-box{
+    padding:5px;
+    width: 80%;
+    height: 80px;
+  }
+  
+  
+  }
+
+
+
+@media screen and (min-width: 380px) {
+
+  .faq-title{
+    font-size: 22px;
+  }
+  .pricing-title{
+    font-size: 22px;
+       
+   }
+   .pricing-title-2{
+   
+       font-size: 22px;
+   }
+   
+
+
+.about-title{
+font-size: 22px;
+}
+.about-title-2{
+  font-size: 22px;
+}
+
+
+.icon-box-1{
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon-box-2{
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon-box-3{
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+}
+.icon-box-4{
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+}
+.about-d{
+ font-size: 12px;
+}
+.about-desc{
+  font-size: 16px;
+}
+.about-number{
+font-size: 15px;
+}
+
+.about-box{
+  padding:5px;
+  width: 70%;
+  height: 80px;
+}
+
+
+}
+
+@media screen and (min-width: 700px) {
+
+  .faq-title{
+    font-size: 30px;
+  }
+
+  .pricing-title{
+    font-size: 30px;
+       
+   }
+   .pricing-title-2{
+   
+       font-size: 30px;
+   }
+   
+  
+  .about-title{
+    font-size: 30px;
+    }
+    .about-title-2{
+      font-size: 30px;
+    }
+
+    .icon-box-1{
+      font-size: 25px;
+      height: 60px;
+      width: 60px;
+    }
+
+    .icon-box-2{
+      font-size: 25px;
+      height: 60px;
+      width: 60px;
+    }
+    .icon-box-3{
+      font-size: 25px;
+      height: 60px;
+      width: 60px;
+    }
+    .icon-box-4{
+      font-size: 25px;
+      height: 60px;
+      width: 60px;
+    }
+    .about-d{
+      font-size: 13px;
+    }
+    .about-desc{
+ font-size: 13px;
+    }
+    .about-number{
+ font-size: 15px;
+    }
+
+    .about-box{
+      padding:2px;
+      width: 70%;
+      height: 80px;
+    }
+}
+
+
+
+@media screen and (min-width: 1400px) {
+
+  .faq-title{
+    font-size: 40px;
+  }
+.pricing-title{
+ font-size: 40px;
+    
+}
+.pricing-title-2{
+
+    font-size: 40px;
+}
+
+
+
+  .about-title{
+    font-size: 40px;
+    }
+    .about-title-2{
+      font-size: 40px;
+    }
+
+    .icon-box-1{
+      font-size: 30px;
+      height: 70px;
+      width: 70px;
+    }
+
+    .icon-box-2{
+      font-size: 30px;
+      height: 70px;
+      width: 70px;
+    }
+    .icon-box-3{
+      font-size: 30px;
+      height: 70px;
+      width: 70px;
+    }
+    .icon-box-4{
+      font-size: 30px;
+      height: 70px;
+      width: 70px;
+    }
+
+    .about-d{
+ font-size: 15px;
+    }
+    .about-desc{
+ font-size: 18px;
+    }
+    .about-number{
+ font-size: 15px;
+    }
+
+    .about-box{
+      padding:2px;
+      width: 60%;
+      height: 80px;
+    }
+    
+}
+
+
+
 .icon-box-1{
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   background-color: var(--1);
   color: var(--21);
-  font-size: 40px;
-  height: 70px;
-  width: 70px;
   border-radius: 5px;
   
 
@@ -353,9 +664,7 @@ border : solid 2px var(--10)  ;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   background-color: var(--31);
   color: var(--30);
-  font-size: 40px;
-  height: 70px;
-  width: 70px;
+
   border-radius: 5px;
   
 
@@ -365,9 +674,7 @@ border : solid 2px var(--10)  ;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   background-color: var(--32);
   color: var(--33);
-  font-size: 40px;
-  height: 70px;
-  width: 70px;
+
   border-radius: 5px;
   
 
@@ -377,15 +684,13 @@ border : solid 2px var(--10)  ;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   background-color: var(--34);
   color: var(--35);
-  font-size: 40px;
-  height: 70px;
-  width: 70px;
+
   border-radius: 5px;
   }
 
 
 .about-d{
-  font-size: 15px;
+
   line-height: 20px;
   padding-right: 10%;
   padding-left: 3%;
@@ -403,7 +708,6 @@ border : solid 2px var(--10)  ;
   color: var(--8);
     opacity: 100%;
     font-weight: 700;
-    font-size: 40px;
     font-family: 'Lato', sans-serif;
     margin-top: 2%;
     
@@ -413,7 +717,7 @@ border : solid 2px var(--10)  ;
   color: var(--27);
     opacity: 100%;
     font-weight: bolder;
-    font-size: 40px;
+
     font-family: 'Lato', sans-serif;
     margin-top: 5%;
     text-decoration: underline;
@@ -737,7 +1041,7 @@ margin-right: 1px;
   color: var(--11);
     opacity: 100%;
     font-weight: 700;
-    font-size: 40px;
+
     font-family: 'Lato', sans-serif;
     margin-top: 2%;
     
@@ -746,7 +1050,7 @@ margin-right: 1px;
   color: var(--27);
     opacity: 100%;
     font-weight: bolder;
-    font-size: 40px;
+
     font-family: 'Lato', sans-serif;
     margin-top: 2%;
     
@@ -973,7 +1277,6 @@ font-weight: bold;
     color: var(--8);
       opacity: 100%;
       font-weight: 700;
-      font-size: 40px;
       font-family: 'Lato', sans-serif;
       margin-top: 2%;
     

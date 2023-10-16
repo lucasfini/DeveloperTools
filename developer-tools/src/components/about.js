@@ -88,16 +88,16 @@ const About = () => {
           <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12  ">
           <Fade left cascade>
             <div className="row ">
-              <div className="col-12 col-xl-6 d-flex justify-content-end mb-2">
+              <div className="col-12 col-xl-6 col-lg-6 d-flex justify-content-xl-end justify-content-lg-end  justify-content-center ">
                 <About_Box {...instruction1} />
               </div>
-              <div className=" col-12  col-xl-6 d-flex justify-content-start">
+              <div className=" col-12  col-xl-6 col-lg-6 d-flex justify-content-xl-start justify-content-lg-start justify-content-center">
                 <About_Box {...instruction2} />
               </div>
-              <div className=" col-12  col-xl-6 d-flex justify-content-end">
+              <div className=" col-12  col-xl-6 col-lg-6 d-flex justify-content-xl-end justify-content-lg-end  justify-content-center">
                 <About_Box {...instruction3} />
               </div>
-              <div className=" col-12 col-xl-6  d-flex justify-content-start">
+              <div className=" col-12 col-xl-6  col-lg-6  d-flex justify-content-xl-start justify-content-lg-start justify-content-center">
                 <About_Box {...instruction4} />
               </div>
           

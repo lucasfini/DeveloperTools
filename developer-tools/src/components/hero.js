@@ -22,6 +22,7 @@ const Hero = () => {
     // You can add more CSS properties as needed
   };
   return (
+   
     <section id="section1" className="hero-section pt-3 pb-3 ">
       <div className="row">
         <div className="col-12 mb-5">
@@ -36,22 +37,24 @@ const Hero = () => {
             <center>
               <div className="row ">
                 <div className="col-12 col-lg-12 d-flex  align-items-center  justify-content-center   ">
-                  <h1 className=" hero-title">
+                  <p className=" hero-title ">
                     {" "}
-                    <p className="hero-title-2 ">SUPERCHARGE</p> your
+                    <p className="hero-title-2">SUPERCHARGE</p> your
                     development workflow
-                  </h1>
+                  </p>
                 </div>
               </div>
             </center>
             <div className="row  justify-content-center align-items-center ">
               {
+                <center>
                 <div className="col-12 col-lg-12  d-flex align-items-center justify-content-center pt-4">
-                  <p className=" hero-description  ">
+                  <p className=" hero-description ">
                     Empowering Developers to Code Faster, Smarter, and with
                     Confidence.
                   </p>
                 </div>
+                </center>
               }
             </div>
             </div>
